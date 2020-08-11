@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="173.0" prefWidth="268.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ControllerGasto">
+   <children>
+      <TextField fx:id="FTvalor" layoutX="7.0" layoutY="81.0" />
+      <TextField fx:id="TFNome" layoutX="7.0" layoutY="131.0" />
+      <Button fx:id="btnExecutar" layoutX="209.0" layoutY="131.0" mnemonicParsing="false" text="Salvar" />
+      <RadioButton layoutX="35.0" layoutY="38.0" mnemonicParsing="false" text="Escola">
+         <toggleGroup>
+            <ToggleGroup fx:id="tipo" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="146.0" layoutY="38.0" mnemonicParsing="false" text="Saude" toggleGroup="$tipo" />
+      <Label layoutX="7.0" layoutY="63.0" text="valor:" />
+      <Label layoutX="7.0" layoutY="114.0" text="Nome do Gasto:" />
+      <Label layoutX="35.0" layoutY="14.0" text="Tipod de gasto:" />
+   </children>
+</AnchorPane>

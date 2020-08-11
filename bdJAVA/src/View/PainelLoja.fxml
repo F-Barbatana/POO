@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="395.0" prefWidth="559.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Controller">
+    <children>
+        <TableView fx:id="tabel" editable="true" layoutX="17.0" layoutY="28.0" prefHeight="278.0" prefWidth="526.0" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="28.0">
+            <columns>
+                <TableColumn fx:id="cName" minWidth="75.0" prefWidth="292.0" text="Product Name" />
+                <TableColumn fx:id="cPrice" minWidth="20.0" prefWidth="111.0" text="Price" />
+                <TableColumn fx:id="cQuantity" prefWidth="122.0" text="Quantity" />
+            </columns>
+        </TableView>
+        <Button layoutX="491.0" layoutY="325.0" mnemonicParsing="false" onAction="#acaoBotao" prefHeight="25.0" prefWidth="51.0" text="Save" AnchorPane.bottomAnchor="45.0" AnchorPane.rightAnchor="17.0" />
+        <Button layoutX="432.0" layoutY="325.0" mnemonicParsing="false" onAction="#delete" text="Delete" AnchorPane.bottomAnchor="45.0" AnchorPane.rightAnchor="76.0" />
+        <Button layoutX="371.0" layoutY="325.0" mnemonicParsing="false" onAction="#clear" prefHeight="25.0" prefWidth="52.0" text="Clear" AnchorPane.bottomAnchor="45.0" AnchorPane.rightAnchor="136.0" />
+        <TextField fx:id="Nome_prod" layoutX="17.0" layoutY="325.0" prefHeight="25.0" prefWidth="160.0" promptText="Product Name" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="17.0" />
+        <TextField fx:id="Price" layoutX="190.0" layoutY="325.0" prefHeight="25.0" prefWidth="79.0" promptText="Price" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="190.0" />
+        <TextField fx:id="Quant" layoutX="280.0" layoutY="325.0" prefHeight="25.0" prefWidth="79.0" promptText="Quantity" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="280.0" />
+    </children>
+</AnchorPane>

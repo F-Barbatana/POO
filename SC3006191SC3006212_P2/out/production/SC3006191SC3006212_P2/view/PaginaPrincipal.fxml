@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="354.0" prefWidth="453.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ControllerPrincipal">
+   <children>
+      <Label layoutX="131.0" layoutY="5.0" text="Tabela de Gastos dedutiveis" AnchorPane.leftAnchor="131.0" AnchorPane.rightAnchor="131.0" AnchorPane.topAnchor="5.0">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font></Label>
+      <TableView fx:id="tvDedutivel" layoutX="-2.0" layoutY="-2.0" maxWidth="1.7976931348623157E308" prefHeight="216.0" prefWidth="452.0" AnchorPane.bottomAnchor="113.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+        <columns>
+          <TableColumn fx:id="cTipo" maxWidth="150.0" prefWidth="150.0" resizable="false" text="Tipo" />
+          <TableColumn fx:id="cValor" maxWidth="150.0" prefWidth="150.0" text="Valor" />
+            <TableColumn fx:id="cNome" maxWidth="1.7976931348623157E308" prefWidth="150.0" resizable="false" text="Nome do Gasto" />
+        </columns>
+      </TableView>
+      <TextField fx:id="TFRecebimento" layoutX="12.0" layoutY="320.0" prefHeight="25.0" prefWidth="152.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="12.0" />
+      <TextField fx:id="TFpago" layoutX="177.0" layoutY="319.0" prefHeight="25.0" prefWidth="152.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="177.0" />
+      <Button layoutX="233.0" layoutY="245.0" mnemonicParsing="false" onAction="#Adcionar" text="Adcionar" AnchorPane.bottomAnchor="84.0" AnchorPane.rightAnchor="82.0" />
+      <Button layoutX="236.0" layoutY="245.0" mnemonicParsing="false" onAction="#Deletar" text="Remover" AnchorPane.bottomAnchor="84.0" AnchorPane.rightAnchor="153.0" />
+      <Button layoutX="375.0" layoutY="245.0" mnemonicParsing="false" onAction="#Editar" prefHeight="25.0" prefWidth="64.0" text="Editar" AnchorPane.bottomAnchor="84.0" AnchorPane.rightAnchor="14.0" />
+      <Button layoutX="338.0" layoutY="319.0" mnemonicParsing="false" onAction="#DeclararImposto" text="Calcular imposto" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+      <Label fx:id="TotalShow" layoutX="372.0" layoutY="289.0" text="Label" visible="false" AnchorPane.bottomAnchor="48.0" AnchorPane.rightAnchor="44.0">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font></Label>
+      <Label layoutX="12.0" layoutY="298.0" text="Renda Tributável:" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="12.0" />
+      <Label layoutX="179.0" layoutY="297.0" text="Valor já pago:" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="179.0" />
+      <RadioButton fx:id="RBdsim" layoutX="15.0" layoutY="249.0" mnemonicParsing="false" selected="true" text="Declaração Simplificada" AnchorPane.bottomAnchor="88.0" AnchorPane.leftAnchor="15.0">
+         <toggleGroup>
+            <ToggleGroup fx:id="declara" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="RBdcom" layoutX="14.0" layoutY="270.0" mnemonicParsing="false" text="Declaração completa" toggleGroup="$declara" AnchorPane.bottomAnchor="67.0" AnchorPane.leftAnchor="14.0" />
+   </children>
+</AnchorPane>
